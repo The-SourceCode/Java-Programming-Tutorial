@@ -1,0 +1,19 @@
+import java.util.HashMap;
+
+public class Java8 {
+
+    private static HashMap<String, Double> grades = new HashMap<String, Double>();
+
+    public static void main(String[] args) {
+
+        grades.put("English", 98.4);
+        grades.put("Science", 58.4);
+        grades.put("Math", 78.2);
+        grades.put("Social Studies", 96.4);
+        grades.put("Spanish", 80.8);
+
+        System.out.println("Size: " + grades.size());
+
+    }
+
+}
