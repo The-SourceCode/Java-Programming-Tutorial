@@ -1,0 +1,21 @@
+import java.util.HashMap;
+
+public class Java8 {
+
+    public static HashMap<Integer, Person> people = new HashMap<>();
+
+    public static void main(String[] args) {
+        people.put(1, new Person(1, "Daeshan", "Malik", 22));
+        people.put(2, new Person(2, "Tom", "Davis", 25));
+        people.put(3, new Person(3, "Jessica", "Philip", 32));
+        people.put(4, new Person(4, "Frank", "Thomas", 54));
+
+        Person person = people.get(2);
+        System.out.println(person.getFname() + " " + person.getLname() + " is " + person.getAge() + " years old.");
+
+        person.setAge(person.getAge() + 1);
+
+        System.out.println(person.getFname() + " had a birthday and is now " + person.getAge() + " years old.");
+    }
+
+}
